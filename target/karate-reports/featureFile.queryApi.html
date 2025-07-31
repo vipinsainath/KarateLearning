@@ -1,0 +1,1672 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"5b6d525c-4492-4131-b183-5a663073ea20",karate_version:"1.4.1",karate_meta:null});
+  }
+});
+</script>
+
+    <title>featureFile.queryApi</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">4</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2025-07-31 11:51:58 am</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:8]"><span>[1:8]</span> <span>Fetch the user whose name contains &#39;Achari&#39;</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[2:17]"><span>[2:17]</span> <span>Fetch the user whose name contains &#39;Achari&#39; and status as active</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[3:27]"><span>[3:27]</span> <span>Fetch the user with name and gender</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[4:37]"><span>[4:37]</span> <span>Fetch the user whose name contains &#39;Achari&#39; and find the total counts</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">featureFile/queryApi.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Query the URL</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:8]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:8]</span>
+                <span class="scenario-name">Fetch the user whose name contains &#39;Achari&#39;</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>1552</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:8]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:8]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def username = &#39;Achari&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">11:51:55.091 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:8]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def status = &#39;active&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:8]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def gender = &#39;male&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def query = {name: &#39;Achari&#39;}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">68</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url baseUrl + &#39;/public/v1/users&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">11</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>params query</span>
+      </div>
+    </div>
+    <div class="time-cell passed">10</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1451</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">7</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.14">11:51:56.704 [print] {
+  &quot;meta&quot;: {
+    &quot;pagination&quot;: {
+      &quot;total&quot;: 33,
+      &quot;pages&quot;: 4,
+      &quot;page&quot;: 1,
+      &quot;limit&quot;: 10,
+      &quot;links&quot;: {
+        &quot;previous&quot;: null,
+        &quot;current&quot;: &quot;https://gorest.co.in/public/v1/users?page=1&quot;,
+        &quot;next&quot;: &quot;https://gorest.co.in/public/v1/users?page=2&quot;
+      }
+    }
+  },
+  &quot;data&quot;: [
+    {
+      &quot;id&quot;: 8037219,
+      &quot;name&quot;: &quot;Saraswati Achari&quot;,
+      &quot;email&quot;: &quot;saraswati_achari@huels-bartell.test&quot;,
+      &quot;gender&quot;: &quot;female&quot;,
+      &quot;status&quot;: &quot;active&quot;
+    },
+    {
+      &quot;id&quot;: 8036403,
+      &quot;name&quot;: &quot;Usha Achari&quot;,
+      &quot;email&quot;: &quot;achari_usha@bosco.test&quot;,
+      &quot;gender&quot;: &quot;female&quot;,
+      &quot;status&quot;: &quot;active&quot;
+    },
+    {
+      &quot;id&quot;: 8028364,
+      &quot;name&quot;: &quot;Chandira Achari&quot;,
+      &quot;email&quot;: &quot;chandira_achari@johns.test&quot;,
+      &quot;gender&quot;: &quot;male&quot;,
+      &quot;status&quot;: &quot;inactive&quot;
+    },
+    {
+      &quot;id&quot;: 8028361,
+      &quot;name&quot;: &quot;Ramaa Achari&quot;,
+      &quot;email&quot;: &quot;achari_ramaa@orn.test&quot;,
+      &quot;gender&quot;: &quot;male&quot;,
+      &quot;status&quot;: &quot;active&quot;
+    },
+    {
+      &quot;id&quot;: 8010499,
+      &quot;name&quot;: &quot;Mukesh Achari&quot;,
+      &quot;email&quot;: &quot;achari_mukesh@dooley-bailey.example&quot;,
+      &quot;gender&quot;: &quot;male&quot;,
+      &quot;status&quot;: &quot;inactive&quot;
+    },
+    {
+      &quot;id&quot;: 8010482,
+      &quot;name&quot;: &quot;Charumati Achari&quot;,
+      &quot;email&quot;: &quot;achari_charumati@berge-greenholt.test&quot;,
+      &quot;gender&quot;: &quot;male&quot;,
+      &quot;status&quot;: &quot;inactive&quot;
+    },
+    {
+      &quot;id&quot;: 7984700,
+      &quot;name&quot;: &quot;Sharmila Achari&quot;,
+      &quot;email&quot;: &quot;achari_sharmila@green.test&quot;,
+      &quot;gender&quot;: &quot;male&quot;,
+      &quot;status&quot;: &quot;inactive&quot;
+    },
+    {
+      &quot;id&quot;: 7921779,
+      &quot;name&quot;: &quot;Kiran Achari&quot;,
+      &quot;email&quot;: &quot;achari_kiran@bergstrom.test&quot;,
+      &quot;gender&quot;: &quot;female&quot;,
+      &quot;status&quot;: &quot;inactive&quot;
+    },
+    {
+      &quot;id&quot;: 7921767,
+      &quot;name&quot;: &quot;Divakar Achari&quot;,
+      &quot;email&quot;: &quot;divakar_achari@kuhic.test&quot;,
+      &quot;gender&quot;: &quot;male&quot;,
+      &quot;status&quot;: &quot;inactive&quot;
+    },
+    {
+      &quot;id&quot;: 7887640,
+      &quot;name&quot;: &quot;Bhargavi Achari PhD&quot;,
+      &quot;email&quot;: &quot;achari_bhargavi_phd@thompson-murphy.test&quot;,
+      &quot;gender&quot;: &quot;male&quot;,
+      &quot;status&quot;: &quot;active&quot;
+    }
+  ]
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:17]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:17]</span>
+                <span class="scenario-name">Fetch the user whose name contains &#39;Achari&#39; and status as active</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>691</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2:17]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2:17]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def username = &#39;Achari&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">11:51:56.739 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:17]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def status = &#39;active&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:17]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def gender = &#39;male&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.18">
+      <div class="step-ref passed">18</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def query = {name: &#39;Achari&#39;, status: &#39;active&#39;}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.19">
+      <div class="step-ref passed">19</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url baseUrl + &#39;/public/v1/users&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.20">
+      <div class="step-ref passed">20</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>params query</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.21">
+      <div class="step-ref passed">21</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">680</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.22">
+      <div class="step-ref passed">22</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.23">
+      <div class="step-ref passed">23</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.23">11:51:57.439 [print] {
+  &quot;meta&quot;: {
+    &quot;pagination&quot;: {
+      &quot;total&quot;: 13,
+      &quot;pages&quot;: 2,
+      &quot;page&quot;: 1,
+      &quot;limit&quot;: 10,
+      &quot;links&quot;: {
+        &quot;previous&quot;: null,
+        &quot;current&quot;: &quot;https://gorest.co.in/public/v1/users?page=1&quot;,
+        &quot;next&quot;: &quot;https://gorest.co.in/public/v1/users?page=2&quot;
+      }
+    }
+  },
+  &quot;data&quot;: [
+    {
+      &quot;id&quot;: 8037219,
+      &quot;name&quot;: &quot;Saraswati Achari&quot;,
+      &quot;email&quot;: &quot;saraswati_achari@huels-bartell.test&quot;,
+      &quot;gender&quot;: &quot;female&quot;,
+      &quot;status&quot;: &quot;active&quot;
+    },
+    {
+      &quot;id&quot;: 8036403,
+      &quot;name&quot;: &quot;Usha Achari&quot;,
+      &quot;email&quot;: &quot;achari_usha@bosco.test&quot;,
+      &quot;gender&quot;: &quot;female&quot;,
+      &quot;status&quot;: &quot;active&quot;
+    },
+    {
+      &quot;id&quot;: 8028361,
+      &quot;name&quot;: &quot;Ramaa Achari&quot;,
+      &quot;email&quot;: &quot;achari_ramaa@orn.test&quot;,
+      &quot;gender&quot;: &quot;male&quot;,
+      &quot;status&quot;: &quot;active&quot;
+    },
+    {
+      &quot;id&quot;: 7887640,
+      &quot;name&quot;: &quot;Bhargavi Achari PhD&quot;,
+      &quot;email&quot;: &quot;achari_bhargavi_phd@thompson-murphy.test&quot;,
+      &quot;gender&quot;: &quot;male&quot;,
+      &quot;status&quot;: &quot;active&quot;
+    },
+    {
+      &quot;id&quot;: 7876394,
+      &quot;name&quot;: &quot;Keerti Achari&quot;,
+      &quot;email&quot;: &quot;keerti_achari@lemke.test&quot;,
+      &quot;gender&quot;: &quot;male&quot;,
+      &quot;status&quot;: &quot;active&quot;
+    },
+    {
+      &quot;id&quot;: 7815249,
+      &quot;name&quot;: &quot;Shakuntala Achari&quot;,
+      &quot;email&quot;: &quot;achari_shakuntala@schneider.example&quot;,
+      &quot;gender&quot;: &quot;male&quot;,
+      &quot;status&quot;: &quot;active&quot;
+    },
+    {
+      &quot;id&quot;: 7784271,
+      &quot;name&quot;: &quot;Abhisyanta Achari CPA&quot;,
+      &quot;email&quot;: &quot;cpa_abhisyanta_achari@mcdermott.test&quot;,
+      &quot;gender&quot;: &quot;female&quot;,
+      &quot;status&quot;: &quot;active&quot;
+    },
+    {
+      &quot;id&quot;: 7764957,
+      &quot;name&quot;: &quot;Jagdish Achari&quot;,
+      &quot;email&quot;: &quot;achari_jagdish@connelly.test&quot;,
+      &quot;gender&quot;: &quot;male&quot;,
+      &quot;status&quot;: &quot;active&quot;
+    },
+    {
+      &quot;id&quot;: 7725913,
+      &quot;name&quot;: &quot;Ramesh Achari&quot;,
+      &quot;email&quot;: &quot;achari_ramesh@lind.example&quot;,
+      &quot;gender&quot;: &quot;female&quot;,
+      &quot;status&quot;: &quot;active&quot;
+    },
+    {
+      &quot;id&quot;: 7664199,
+      &quot;name&quot;: &quot;Harinakshi Achari&quot;,
+      &quot;email&quot;: &quot;harinakshi_achari@parker.example&quot;,
+      &quot;gender&quot;: &quot;male&quot;,
+      &quot;status&quot;: &quot;active&quot;
+    }
+  ]
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[3:27]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[3:27]</span>
+                <span class="scenario-name">Fetch the user with name and gender</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>489</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[3:27]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[3:27]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def username = &#39;Achari&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">11:51:57.452 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:27]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def status = &#39;active&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:27]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def gender = &#39;male&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.28">
+      <div class="step-ref passed">28</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def query = { name: &#39;#(username)&#39;, gender: &#39;#(gender)&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.29">
+      <div class="step-ref passed">29</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url baseUrl + &#39;/public/v1/users&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.30">
+      <div class="step-ref passed">30</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>params query</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.31">
+      <div class="step-ref passed">31</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">480</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.32">
+      <div class="step-ref passed">32</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.33">
+      <div class="step-ref passed">33</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.33">11:51:57.945 [print] {
+  &quot;meta&quot;: {
+    &quot;pagination&quot;: {
+      &quot;total&quot;: 19,
+      &quot;pages&quot;: 2,
+      &quot;page&quot;: 1,
+      &quot;limit&quot;: 10,
+      &quot;links&quot;: {
+        &quot;previous&quot;: null,
+        &quot;current&quot;: &quot;https://gorest.co.in/public/v1/users?page=1&quot;,
+        &quot;next&quot;: &quot;https://gorest.co.in/public/v1/users?page=2&quot;
+      }
+    }
+  },
+  &quot;data&quot;: [
+    {
+      &quot;id&quot;: 8028364,
+      &quot;name&quot;: &quot;Chandira Achari&quot;,
+      &quot;email&quot;: &quot;chandira_achari@johns.test&quot;,
+      &quot;gender&quot;: &quot;male&quot;,
+      &quot;status&quot;: &quot;inactive&quot;
+    },
+    {
+      &quot;id&quot;: 8028361,
+      &quot;name&quot;: &quot;Ramaa Achari&quot;,
+      &quot;email&quot;: &quot;achari_ramaa@orn.test&quot;,
+      &quot;gender&quot;: &quot;male&quot;,
+      &quot;status&quot;: &quot;active&quot;
+    },
+    {
+      &quot;id&quot;: 8010499,
+      &quot;name&quot;: &quot;Mukesh Achari&quot;,
+      &quot;email&quot;: &quot;achari_mukesh@dooley-bailey.example&quot;,
+      &quot;gender&quot;: &quot;male&quot;,
+      &quot;status&quot;: &quot;inactive&quot;
+    },
+    {
+      &quot;id&quot;: 8010482,
+      &quot;name&quot;: &quot;Charumati Achari&quot;,
+      &quot;email&quot;: &quot;achari_charumati@berge-greenholt.test&quot;,
+      &quot;gender&quot;: &quot;male&quot;,
+      &quot;status&quot;: &quot;inactive&quot;
+    },
+    {
+      &quot;id&quot;: 7984700,
+      &quot;name&quot;: &quot;Sharmila Achari&quot;,
+      &quot;email&quot;: &quot;achari_sharmila@green.test&quot;,
+      &quot;gender&quot;: &quot;male&quot;,
+      &quot;status&quot;: &quot;inactive&quot;
+    },
+    {
+      &quot;id&quot;: 7921767,
+      &quot;name&quot;: &quot;Divakar Achari&quot;,
+      &quot;email&quot;: &quot;divakar_achari@kuhic.test&quot;,
+      &quot;gender&quot;: &quot;male&quot;,
+      &quot;status&quot;: &quot;inactive&quot;
+    },
+    {
+      &quot;id&quot;: 7887640,
+      &quot;name&quot;: &quot;Bhargavi Achari PhD&quot;,
+      &quot;email&quot;: &quot;achari_bhargavi_phd@thompson-murphy.test&quot;,
+      &quot;gender&quot;: &quot;male&quot;,
+      &quot;status&quot;: &quot;active&quot;
+    },
+    {
+      &quot;id&quot;: 7876394,
+      &quot;name&quot;: &quot;Keerti Achari&quot;,
+      &quot;email&quot;: &quot;keerti_achari@lemke.test&quot;,
+      &quot;gender&quot;: &quot;male&quot;,
+      &quot;status&quot;: &quot;active&quot;
+    },
+    {
+      &quot;id&quot;: 7876362,
+      &quot;name&quot;: &quot;Shivakari Achari&quot;,
+      &quot;email&quot;: &quot;shivakari_achari@bartell-beier.example&quot;,
+      &quot;gender&quot;: &quot;male&quot;,
+      &quot;status&quot;: &quot;inactive&quot;
+    },
+    {
+      &quot;id&quot;: 7876318,
+      &quot;name&quot;: &quot;Ganapati Achari&quot;,
+      &quot;email&quot;: &quot;achari_ganapati@cormier.test&quot;,
+      &quot;gender&quot;: &quot;male&quot;,
+      &quot;status&quot;: &quot;inactive&quot;
+    }
+  ]
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[4:37]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[4:37]</span>
+                <span class="scenario-name">Fetch the user whose name contains &#39;Achari&#39; and find the total counts</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>614</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[4:37]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[4:37]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def username = &#39;Achari&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">11:51:57.958 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[4:37]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def status = &#39;active&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[4:37]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def gender = &#39;male&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.38">
+      <div class="step-ref passed">38</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def query = {name: &#39;Achari&#39;}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.39">
+      <div class="step-ref passed">39</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url baseUrl + &#39;/public/v1/users&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.40">
+      <div class="step-ref passed">40</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>params query</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.41">
+      <div class="step-ref passed">41</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">595</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.42">
+      <div class="step-ref passed">42</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.43">
+      <div class="step-ref passed">43</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.43">11:51:58.563 [print] {
+  &quot;meta&quot;: {
+    &quot;pagination&quot;: {
+      &quot;total&quot;: 33,
+      &quot;pages&quot;: 4,
+      &quot;page&quot;: 1,
+      &quot;limit&quot;: 10,
+      &quot;links&quot;: {
+        &quot;previous&quot;: null,
+        &quot;current&quot;: &quot;https://gorest.co.in/public/v1/users?page=1&quot;,
+        &quot;next&quot;: &quot;https://gorest.co.in/public/v1/users?page=2&quot;
+      }
+    }
+  },
+  &quot;data&quot;: [
+    {
+      &quot;id&quot;: 8037219,
+      &quot;name&quot;: &quot;Saraswati Achari&quot;,
+      &quot;email&quot;: &quot;saraswati_achari@huels-bartell.test&quot;,
+      &quot;gender&quot;: &quot;female&quot;,
+      &quot;status&quot;: &quot;active&quot;
+    },
+    {
+      &quot;id&quot;: 8036403,
+      &quot;name&quot;: &quot;Usha Achari&quot;,
+      &quot;email&quot;: &quot;achari_usha@bosco.test&quot;,
+      &quot;gender&quot;: &quot;female&quot;,
+      &quot;status&quot;: &quot;active&quot;
+    },
+    {
+      &quot;id&quot;: 8028364,
+      &quot;name&quot;: &quot;Chandira Achari&quot;,
+      &quot;email&quot;: &quot;chandira_achari@johns.test&quot;,
+      &quot;gender&quot;: &quot;male&quot;,
+      &quot;status&quot;: &quot;inactive&quot;
+    },
+    {
+      &quot;id&quot;: 8028361,
+      &quot;name&quot;: &quot;Ramaa Achari&quot;,
+      &quot;email&quot;: &quot;achari_ramaa@orn.test&quot;,
+      &quot;gender&quot;: &quot;male&quot;,
+      &quot;status&quot;: &quot;active&quot;
+    },
+    {
+      &quot;id&quot;: 8010499,
+      &quot;name&quot;: &quot;Mukesh Achari&quot;,
+      &quot;email&quot;: &quot;achari_mukesh@dooley-bailey.example&quot;,
+      &quot;gender&quot;: &quot;male&quot;,
+      &quot;status&quot;: &quot;inactive&quot;
+    },
+    {
+      &quot;id&quot;: 8010482,
+      &quot;name&quot;: &quot;Charumati Achari&quot;,
+      &quot;email&quot;: &quot;achari_charumati@berge-greenholt.test&quot;,
+      &quot;gender&quot;: &quot;male&quot;,
+      &quot;status&quot;: &quot;inactive&quot;
+    },
+    {
+      &quot;id&quot;: 7984700,
+      &quot;name&quot;: &quot;Sharmila Achari&quot;,
+      &quot;email&quot;: &quot;achari_sharmila@green.test&quot;,
+      &quot;gender&quot;: &quot;male&quot;,
+      &quot;status&quot;: &quot;inactive&quot;
+    },
+    {
+      &quot;id&quot;: 7921779,
+      &quot;name&quot;: &quot;Kiran Achari&quot;,
+      &quot;email&quot;: &quot;achari_kiran@bergstrom.test&quot;,
+      &quot;gender&quot;: &quot;female&quot;,
+      &quot;status&quot;: &quot;inactive&quot;
+    },
+    {
+      &quot;id&quot;: 7921767,
+      &quot;name&quot;: &quot;Divakar Achari&quot;,
+      &quot;email&quot;: &quot;divakar_achari@kuhic.test&quot;,
+      &quot;gender&quot;: &quot;male&quot;,
+      &quot;status&quot;: &quot;inactive&quot;
+    },
+    {
+      &quot;id&quot;: 7887640,
+      &quot;name&quot;: &quot;Bhargavi Achari PhD&quot;,
+      &quot;email&quot;: &quot;achari_bhargavi_phd@thompson-murphy.test&quot;,
+      &quot;gender&quot;: &quot;male&quot;,
+      &quot;status&quot;: &quot;active&quot;
+    }
+  ]
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Way one to find total count  - using lenght func</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.45">
+      <div class="step-ref passed">45</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def totalCount1 = response.data.length</span>
+      </div>
+    </div>
+    <div class="time-cell passed">7</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.46">
+      <div class="step-ref passed">46</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;Total count 1: &#39;,  totalCount1</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.46">11:51:58.572 [print] Total count 1:  10 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Way Two to find total count  - using json attribute iteself</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.48">
+      <div class="step-ref passed">48</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def totalCount2 = response.meta.pagination.total</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.49">
+      <div class="step-ref passed">49</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;Total count 2: &#39;,  totalCount2</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.49">11:51:58.576 [print] Total count 2:  33 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
