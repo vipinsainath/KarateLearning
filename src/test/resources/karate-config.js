@@ -9,8 +9,14 @@ function fn() {
   var config = {
     env: env,
     myVarName: 'hello karate',
-    baseUrl: 'https://gorest.co.in'
+    baseUrl: 'https://gorest.co.in',
+    headers: {
+      Connection: 'Keep-Alive',
+      Accept: 'application/json'
+    }, 
+    tokenID: '2895368d256d5d204a5f66594efca0283b971c579f200054744fc9ee15edc537'
   };
+
   if (env == 'dev') {
     config.baseUrl = 'https://dev.gorest.co.in';
     config.authToken = 'dev-token-123';
