@@ -1,0 +1,12 @@
+import net.datafaker.Faker;
+
+public class randomDataFaker {
+	
+	public static void main(String args[]) {
+		Faker fake = new Faker();
+		String id = fake.number().digit(5);
+		System.out.println(id);
+	}
+	
+
+}
