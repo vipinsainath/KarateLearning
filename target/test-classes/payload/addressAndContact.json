@@ -1,0 +1,11 @@
+{
+  "AddressLine1": {
+    "DoorNo": 12,
+    "Street": "testStreet",
+    "Pincode": 6541235
+  },
+  "Contact": {
+    "phone": 1234567890,
+    "email": "karate@gmail.com"
+  }
+}
