@@ -6,6 +6,7 @@ public class TestRunner {
 
 	public static String featureFile = "classpath:featureFile/";     // or "src/test/resources/featureFile/"
 	
+	
 //    @Karate.Test
 //    Karate testApi() {
 //    	// return Karate.run("featureFile/getApi1").relativeTo(getClass());				// works if the .feature file exist in same package
@@ -67,8 +68,23 @@ public class TestRunner {
 //			return Karate.run(featureFile+"CreateNestedJsonObject.feature");						
 //	  }	
 	  
+//	  @Karate.Test
+//	  Karate generateRandomValuesUsingDataFakerapi() {
+//			return Karate.run(featureFile+"GenerateRandomValuesforPayloadUsingDataFaker.feature");						
+//	  }	
+	  
+//	  @Karate.Test
+//	  Karate embeddedExpression() {
+//			return Karate.run(featureFile+"embeddedExpression.feature");						
+//	  }
+	  
+//	  @Karate.Test
+//	  Karate playWithJson() {
+//			return Karate.run(featureFile+"playWithJson.feature");						
+//	  }
+	
 	  @Karate.Test
-	  Karate generateRandomValuesUsingDataFakerapi() {
-			return Karate.run(featureFile+"GenerateRandomValuesforPayloadUsingDataFaker.feature");						
-	  }	
+	  Karate dataDriven() {
+			return Karate.run(featureFile+"dataDriven.feature");						
+	  }
 }
