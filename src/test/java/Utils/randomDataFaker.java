@@ -5,13 +5,12 @@ import net.datafaker.Faker;
 public class randomDataFaker {
 
 	
-	static Faker fake = new Faker();
+	static Faker fake = new Faker();	
 	
-	
-	public randomDataFaker() {
-	}
-	public static void main(String[] args) {
-	}
+//	public randomDataFaker() {
+//	}
+//	public static void main(String[] args) {
+//	}
 
 	
 	public static String generateRandomID(int digit) {
