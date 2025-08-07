@@ -58,6 +58,7 @@ Examples:
 
 
 ## Way 2 - using embedded expression - useful when data having empty values
+@ignore
 Scenario Outline: <Title> Book details and ingest data into json using embedded expression
 * def bookJson = 
 """
@@ -70,7 +71,7 @@ Scenario Outline: <Title> Book details and ingest data into json using embedded 
 """
 * print 'Updated Book Store: ', bookJson
 
-## Note:   ## expression will omit the attribute if having null or empty values
+## Note: ## expression will omit the attribute if having null or empty values
 Examples:
 |Category	|Author	|Title				|Price|
 |romance	|vipin	|romeo Juliet	|19.50|

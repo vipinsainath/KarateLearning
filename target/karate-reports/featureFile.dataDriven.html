@@ -38,8 +38,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
     </a>
     <div class="nav-count">
-      <div id="nav-pass" class="bg-success">3</div>
-      <div id="nav-fail" class="bg-danger">0</div>
+      <div id="nav-pass" class="bg-success">0</div>
+      <div id="nav-fail" class="bg-danger">1</div>
     </div>
   </div>
   <div id="nav-env">
@@ -49,19 +49,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
     <div>Scenarios</div>
   </div>
   <div id="nav-date">
-    <div>2025-08-06 10:27:19 pm</div>
+    <div>2025-08-07 02:22:18 pm</div>
   </div>
 </div>
 
         <div class="nav-container">
-          <div class="nav-item passed">
-            <a href="#[3.1:75]"><span>[3.1:75]</span> <span>romeo Juliet Book details and ingest data into json</span></a>
-          </div>
-          <div class="nav-item passed">
-            <a href="#[3.2:76]"><span>[3.2:76]</span> <span>One Hand Book details and ingest data into json</span></a>
-          </div>
-          <div class="nav-item passed">
-            <a href="#[3.3:77]"><span>[3.3:77]</span> <span> Book details and ingest data into json</span></a>
+          <div class="nav-item failed">
+            <a href="#[4:98]"><span>[4:98]</span> <span>Read external json to fetch values and pass it</span></a>
           </div>
         </div>
       </div>
@@ -75,19 +69,19 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
           <span class="feature-description"></span>
         </div>
         <div class="scenario">
-          <div class="scenario-heading" id="[3.1:75]">
+          <div class="scenario-heading" id="[4:98]">
             <div class="heading-container">
               <div class="scenario-tags">
                 
               </div>
               <div class="scenario-keyword">
-                Scenario: <span>[3.1:75]</span>
-                <span class="scenario-name">romeo Juliet Book details and ingest data into json</span>
+                Scenario: <span>[4:98]</span>
+                <span class="scenario-name">Read external json to fetch values and pass it</span>
                 <span></span>
               </div>
             </div>
-            <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>143</span>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>0</span>
             </div>
           </div>
           
@@ -97,48 +91,14 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row">
-    <div class="step-container" id="1.62">
-      <div class="step-ref passed">62</div>
+    <div class="step-container" id="0.98">
+      <div class="step-ref failed">98</div>
       
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def bookJson =</span>
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>classpath:featureFile/dataDriven.feature[4:98] dynamic expression evaluation failed: read(&#39;classpath:payload/bookStore.json&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">121</div>
-  </div>
-
-   
-  
-  <div class="preformatted" data-parent="1.62">{
-	&quot;category&quot;: ##(Category),
-  &quot;author&quot;: ##(Author),
-  &quot;title&quot;: ##(Title),
-  &quot;price&quot;: ##(Price)
-}</div>
-
-  
-
-  <div class="preformatted" data-parent="1.62">22:27:19.353 karate.env system property was: null 
-</div>   
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="1.71">
-      <div class="step-ref passed">71</div>
-      
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>print &#39;Updated Book Store: &#39;, bookJson</span>
-      </div>
-    </div>
-    <div class="time-cell passed">22</div>
+    <div class="time-cell failed">0</div>
   </div>
 
    
@@ -147,186 +107,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="1.71">22:27:19.599 [print] Updated Book Store:  {
-  &quot;category&quot;: &quot;romance&quot;,
-  &quot;author&quot;: &quot;vipin&quot;,
-  &quot;title&quot;: &quot;romeo Juliet&quot;,
-  &quot;price&quot;: &quot;19.50&quot;
-}
- 
-</div>   
-
-  
-
-</div>
-</div>
-        </div>
-        <div class="scenario">
-          <div class="scenario-heading" id="[3.2:76]">
-            <div class="heading-container">
-              <div class="scenario-tags">
-                
-              </div>
-              <div class="scenario-keyword">
-                Scenario: <span>[3.2:76]</span>
-                <span class="scenario-name">One Hand Book details and ingest data into json</span>
-                <span></span>
-              </div>
-            </div>
-            <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>5</span>
-            </div>
-          </div>
-          
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="2.62">
-      <div class="step-ref passed">62</div>
-      
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def bookJson =</span>
-      </div>
-    </div>
-    <div class="time-cell passed">3</div>
-  </div>
-
-   
-  
-  <div class="preformatted" data-parent="2.62">{
-	&quot;category&quot;: ##(Category),
-  &quot;author&quot;: ##(Author),
-  &quot;title&quot;: ##(Title),
-  &quot;price&quot;: ##(Price)
-}</div>
-
-  
-
-  <div class="preformatted" data-parent="2.62">22:27:19.646 karate.env system property was: null 
-</div>   
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="2.71">
-      <div class="step-ref passed">71</div>
-      
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>print &#39;Updated Book Store: &#39;, bookJson</span>
-      </div>
-    </div>
-    <div class="time-cell passed">1</div>
-  </div>
-
-   
-  
-  
-
-  
-
-  <div class="preformatted" data-parent="2.71">22:27:19.659 [print] Updated Book Store:  {
-  &quot;category&quot;: &quot;Mystery&quot;,
-  &quot;author&quot;: &quot;swetha&quot;,
-  &quot;title&quot;: &quot;One Hand&quot;
-}
- 
-</div>   
-
-  
-
-</div>
-</div>
-        </div>
-        <div class="scenario">
-          <div class="scenario-heading" id="[3.3:77]">
-            <div class="heading-container">
-              <div class="scenario-tags">
-                
-              </div>
-              <div class="scenario-keyword">
-                Scenario: <span>[3.3:77]</span>
-                <span class="scenario-name"> Book details and ingest data into json</span>
-                <span></span>
-              </div>
-            </div>
-            <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>13</span>
-            </div>
-          </div>
-          
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="3.62">
-      <div class="step-ref passed">62</div>
-      
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def bookJson =</span>
-      </div>
-    </div>
-    <div class="time-cell passed">10</div>
-  </div>
-
-   
-  
-  <div class="preformatted" data-parent="3.62">{
-	&quot;category&quot;: ##(Category),
-  &quot;author&quot;: ##(Author),
-  &quot;title&quot;: ##(Title),
-  &quot;price&quot;: ##(Price)
-}</div>
-
-  
-
-  <div class="preformatted" data-parent="3.62">22:27:19.703 karate.env system property was: null 
-</div>   
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="3.71">
-      <div class="step-ref passed">71</div>
-      
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>print &#39;Updated Book Store: &#39;, bookJson</span>
-      </div>
-    </div>
-    <div class="time-cell passed">2</div>
-  </div>
-
-   
-  
-  
-
-  
-
-  <div class="preformatted" data-parent="3.71">22:27:19.727 [print] Updated Book Store:  {
-  &quot;category&quot;: &quot;Suspence&quot;,
-  &quot;author&quot;: &quot;velu&quot;,
-  &quot;price&quot;: &quot;12.00&quot;
-}
- 
-</div>   
+  <div class="preformatted" data-parent="0.98">result is neither list nor function: [type: MAP, value: {store={book=[{&quot;category&quot;:&quot;reference&quot;,&quot;author&quot;:&quot;Nigel Rees&quot;,&quot;title&quot;:&quot;Sayings of the Century&quot;,&quot;price&quot;:8.95},{&quot;category&quot;:&quot;fiction&quot;,&quot;author&quot;:&quot;Evelyn Waugh&quot;,&quot;title&quot;:&quot;Sword of Honour&quot;,&quot;price&quot;:12.99},{&quot;category&quot;:&quot;fiction&quot;,&quot;author&quot;:&quot;Herman Melville&quot;,&quot;title&quot;:&quot;Moby Dick&quot;,&quot;isbn&quot;:&quot;0-553-21311-3&quot;,&quot;price&quot;:8.99},{&quot;category&quot;:&quot;fiction&quot;,&quot;author&quot;:&quot;J. R. R. Tolkien&quot;,&quot;title&quot;:&quot;The Lord of the Rings&quot;,&quot;isbn&quot;:&quot;0-395-19395-8&quot;,&quot;price&quot;:22.99}], bicycle={}}}]</div>   
 
   
 
