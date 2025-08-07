@@ -155,6 +155,54 @@ Scenario: Json Path function - indexing, and applying aggregators
 
 
 
+#############   Writing Operation   ######################
+
+Scenario: Add json object into JSON File
+# read a file and store in variable
+* def payloadFile = read('classpath:payload/createUser.json')
+
+# print the data 
+* print 'Printing the actual external JSON file: ', payloadFile
+
+# Add multiline key-value into json, for that we use set keyword - first it will check for the attribute already exist or not. if not, it will add it
+* set payloadFile.address = 
+"""
+{
+  "AddressLine1": {
+    "DoorNo": 12,
+    "Street": "testStreet",
+    "Pincode": 6541235
+  },
+  "Contact": {
+    "phone": 1234567890,
+    "email": "karate@gmail.com"
+  }
+}
+"""
+
+# print the update the data
+* print 'Printing the Updated external JSON file: ', payloadFile
+* print 'added address key and value to the existing json file' 
+
+
+
+Scenario: Append one json into another JSON File
+# read a file and store in variable
+* def payloadFile = read('classpath:payload/createUser.json')
+* def appendPayloadFile = read('classpath:payload/addressAndContact.json')
+
+# print the data 
+* print 'Printing the actual external JSON file: ', payloadFile
+
+# Add multiline key-value into json, for that we use set keyword - first it will check for the attribute already exist or not. if not, it will add it
+* set payloadFile.address = appendPayloadFile
+
+# print the update the data
+* print 'Printing the Updated external JSON file: ', payloadFile
+* print 'added address Json to the existing json file' 
+
+
+
 
 
 
